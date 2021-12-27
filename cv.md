@@ -67,3 +67,8 @@ function order(words){
 ## Education
 
 * RS School
+
+## Languages
+
+* Russian
+* English (A1)
