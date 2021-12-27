@@ -9,22 +9,32 @@
 </head>
 <body>
     <header>
-        <h1>Kiselev Vladislav</h1>
-        <img src="My_photo.jpg" alt="My photo">
-        <ul>
-            <li>Adress: Belarus, Minsk, Surganova st.</li>
-            <li>Phone: +375256324209</li>
-            <li>E-mail: vladk-target@yandex.ru</li>
-            <li>Discord: Vladislav Kiselev#7774</li>
-            <li><a href="https://github.com/Kiselev-vladislav?tab=repositories">GitHub</a></li>
-        </ul>
+        <section id='photo'>
+            <img src="My_photo.jpg" alt="My photo">
+        </section>
+        <section id=contacts>
+            <h3>Contacts</h3>
+            <ul id='ul_contacts'>
+                <li>Adress: Belarus, Minsk, Surganova st.</li>
+                <li>Phone: +375256324209</li>
+                <li>E-mail: vladk-target@yandex.ru</li>
+                <li>Discord: Vladislav Kiselev#7774</li>
+                <li><a href="https://github.com/Kiselev-vladislav?tab=repositories">GitHub</a></li>
+            </ul>
+        </section>
+        <section id="about me">
+            <h3>About me</h3>
+            <ul>
+                <li>My main job is freelance online advertising.</li>
+                <li>I have experience in team management. Former founder of a tourism company. Subordinate to 6 people.</li>
+                <li>My hobby is my family. I have a wife and a child. I devote my free time to my family</li>
+            </ul>
+        </section>
     </header>
     <main>
-        <section id="about me">
-            <h2>About me</h2>
-            <p>My main job is freelance online advertising.</p>
-            <p>I have experience in team management. Former founder of a tourism company. Subordinate to 6 people.</p>
-            <p>My hobby is my family. I have a wife and a child. I devote my free time to my family</p>
+        <section id='name'>
+        <h1>Kiselev Vladislav</h1>
+        <p>Junior front-end devoloper</p>
         </section>
         <section id="ekils">
             <ul>
@@ -36,6 +46,7 @@
             </ul>
         </section>
         <section id="code_example">
+            <h2>Code example</h2>
             <ul>
                 <li>
                     <p>Task:Your task is to sort a given string. Each word in the string will contain a single number. This number is the position the word should have in the result.
@@ -44,7 +55,7 @@
                     
                     If the input string is empty, return an empty string. The words in the input String will only contain valid consecutive numbers. </p>
                     <div class="code">
-                        function order(words){
+                        <pre>function order(words){
                             let arr = words.split(' ')
                             let result = []
                             for(let i = 1; i < 10; i++){
@@ -54,18 +65,20 @@
                               }
                             }
                             return result.join(' ')
-                          } 
+                          }
+                        </pre>
                     </div>
                 </li>
                 <li>
                     <p>Task: In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.</p>
                     <div class="code">
-                        function highAndLow(numbers){
+                        <pre>function highAndLow(numbers){
                             let arr = numbers.split(' ').map(Number)
                             let maxnum = String(Math.max.apply(null, arr))
                             let minnum = String(Math.min.apply(null, arr))
                             return maxnum + ' ' + minnum
-                          } 
+                          }
+                        </pre>
                     </div>  
                 </li>
             </ul>
@@ -89,8 +102,6 @@
                 <li>English (A1)</li>
             </ul>
         </section>
-    </main>
-
-    
+    </main>   
 </body>
 </html>
