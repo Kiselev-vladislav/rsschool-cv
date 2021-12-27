@@ -1,6 +1,6 @@
 # Kiselev Vladislav
 
-![My photo](/img/My_photo.jpg)
+![My photo](My_photo.jpg)
 
 ## Contacts
 
