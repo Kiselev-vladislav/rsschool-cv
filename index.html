@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Kiselev Vladislav</h1>
+        <img src="My_photo.jpg" alt="My photo">
+        <ul>
+            <li>Adress: Belarus, Minsk, Surganova st.</li>
+            <li>Phone: +375256324209</li>
+            <li>E-mail: vladk-target@yandex.ru</li>
+            <li>Discord: Vladislav Kiselev#7774</li>
+            <li><a href="https://github.com/Kiselev-vladislav?tab=repositories">GitHub</a></li>
+        </ul>
+    </header>
+    <main>
+        <section id="about me">
+            <h2>About me</h2>
+            <p>My main job is freelance online advertising.</p>
+            <p>I have experience in team management. Former founder of a tourism company. Subordinate to 6 people.</p>
+            <p>My hobby is my family. I have a wife and a child. I devote my free time to my family</p>
+        </section>
+        <section id="ekils">
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Git</li>
+                <li>React</li>
+            </ul>
+        </section>
+        <section id="code_example">
+            <ul>
+                <li>
+                    <p>Task:Your task is to sort a given string. Each word in the string will contain a single number. This number is the position the word should have in the result.
+
+                    Note: Numbers can be from 1 to 9. So 1 will be the first word (not 0).
+                    
+                    If the input string is empty, return an empty string. The words in the input String will only contain valid consecutive numbers. </p>
+                    <div class="code">
+                        function order(words){
+                            let arr = words.split(' ')
+                            let result = []
+                            for(let i = 1; i < 10; i++){
+                              for(elem of arr) {
+                                  if(elem.indexOf(i) >= 0)
+                                  result.push(elem)
+                              }
+                            }
+                            return result.join(' ')
+                          } 
+                    </div>
+                </li>
+                <li>
+                    <p>Task: In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.</p>
+                    <div class="code">
+                        function highAndLow(numbers){
+                            let arr = numbers.split(' ').map(Number)
+                            let maxnum = String(Math.max.apply(null, arr))
+                            let minnum = String(Math.min.apply(null, arr))
+                            return maxnum + ' ' + minnum
+                          } 
+                    </div>  
+                </li>
+            </ul>
+        </section>
+        <section id="my_project">
+            <h2>My project</h2>
+            <ul>
+                <li><a href="https://github.com/Kiselev-vladislav/rsschool-cv/tree/gh-pages">My CV</a></li>
+            </ul>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>RS School</li>
+            </ul>
+        </section>
+        <section id="languages">
+            <h2>Languages</h2>
+            <ul>
+                <li>Russian</li>
+                <li>English (A1)</li>
+            </ul>
+        </section>
+    </main>
+
+    
+</body>
+</html>
