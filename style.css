@@ -9,8 +9,8 @@ body {
 
 header {
     width: 30%;
-    background-color: #63ADD0;
-    font: 15px 'Fira Sans', sans-serif;
+    background: linear-gradient(to top, #00AB6F, white);
+    
 }
 
 main {
@@ -20,17 +20,18 @@ main {
 #photo img {
     width: 50%;
     height: 50%;
+    border-radius: 50%;
+    border: 1px solid #58E000;
 }
 
 #photo {
     text-align: center;
-    margin-top: 10%;
+    margin-top: 50px;
 }
 
 h1, h2, h3{
     text-align: center;
-    color: #1729B0;
-    margin: 0;
+    color: #0C5AA6;
 }
 
 #contacts {
@@ -43,26 +44,83 @@ h1, h2, h3{
 header h3 {
     margin-top: 10%;
     margin-bottom: 5%;
+    font-size: 30px;
 }
 
 header ul li {
-    font-size: 15px;
-    padding: 2%;
-    list-style-type: none;
-    margin-left: 10%;
-    margin-right: 5%;
+    font-size: 20px;
+    padding: 20px;
+    margin-left: 30px;
+    margin-right: 10px;
 }
 
-header p {
-    margin-left: 10%;
-    padding: 2%;
-    margin-right: 5%;
-}
 
 #name {
     text-align: center;
+    margin-top: 50px;
 }
 
-h1{
-    margin-top: 5%;
+main h2, main h3, main h4 {
+    margin: 40px 0;
+    background: linear-gradient(to left, #00AB6F, white);
+}
+
+#name p{ 
+    font-style: italic;
+    font-size: 20px;
+}
+
+li {
+    list-style-type: none;
+}
+
+main ul{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#skils ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+main {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.code{
+    width: 300px;
+    text-align:left;
+}
+
+#code_example {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.code {
+    margin: 20px auto;
+    padding: 10px 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+main h2 {
+    font-size: 30px;
+}
+
+main ul li{
+    font-size: 20px;
+}
+
+#languages {
+    margin-bottom: 70px;
 }
