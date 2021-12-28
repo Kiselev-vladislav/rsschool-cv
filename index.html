@@ -8,11 +8,103 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="wrapper">
     <header>
-        <section id='photo'>
-            <img src="My_photo.jpg" alt="My photo">
+        <nav>
+            <ul class='menu'>
+                <li><a class="buttonNav" href="#skil">Skils</a></li>
+                <li><a class="buttonNav" href="#code_example">Code example</a></li>
+                <li><a class="buttonNav" href="#project">My project</a></li>
+                <li><a class="buttonNav" href="#educ">Education</a></li>
+                <li><a class="buttonNav" href="#lang">Languages</a></li>
+            </ul>
+        </nav>
+        <section class="name">
+            <h1>Kiselev Vladislav</h1>
+            <p>Junior front-end developer</p>
         </section>
-        <section id=contacts>
+    </header>
+    <main>
+        <section class="mainSec" id="skil">
+            <h2>Skils</h2>
+            <ul id="skils">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Git</li>
+                <li>React</li>
+            </ul>
+        </section>
+        <section id="code_example" сlass="mainSec">
+            <h2>Code example</h2>
+            <ul>
+                <li>
+                    <p class="task"> <span class='bold'>Task:</span> Your task is to sort a given string. Each word in the string will contain a single number. This number is the position the word should have in the result.
+
+                    Note: Numbers can be from 1 to 9. So 1 will be the first word (not 0).
+                    
+                    If the input string is empty, return an empty string. The words in the input String will only contain valid consecutive numbers. </p>
+
+                    <div class="code">
+                        <code>
+                            function order(words){<br>
+                            &nbsp;let arr = words.split(' ')<br>
+                            &nbsp;let result = []<br>
+                            &nbsp;for(let i = 1; i &lt 10; i++){<br>
+                                &nbsp;    &nbsp;for(elem of arr) {<br>
+                                    &nbsp;       &nbsp;     &nbsp;if(elem.indexOf(i) >= 0){<br>
+                                        &nbsp;        &nbsp;        &nbsp;result.push(elem)<br>
+                                        &nbsp;     &nbsp;   &nbsp;}<br>
+                                        &nbsp;   &nbsp;}<br>
+                                        &nbsp;return result.join(' ')<br>
+                                        &nbsp;}<br>
+                        </code>
+                    </div>
+                </li>
+                <li>
+                    <p class="task"> <span class='bold'>Task:</span> In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.</p>
+                    <div class="code">
+                        <code class="code">
+                            function highAndLow(numbers){<br>
+                                &nbsp;let arr = numbers.split(' ').map(Number)<br>
+                                &nbsp;let maxnum = String(Math.max.apply(null, arr))<br>
+                                &nbsp;let minnum = String(Math.min.apply(null, arr))<br>
+                                &nbsp;return maxnum + ' ' + minnum<br>
+                            }
+                        </code>
+                    </div>  
+                </li>
+            </ul>
+        </section>
+        <section сlass="mainSec" id="project">
+            <h2>My project</h2>
+            <ul id="my_project" >
+                <li><a class="project" href="https://github.com/Kiselev-vladislav/rsschool-cv/tree/gh-pages" target="_blank" >My CV</a></li>
+                <li><a class="project" target="_blank" href="" target="_blank" >2 Project</a></li>
+                <li><a class="project" target="_blank" href="" target="_blank" >3 Project</a></li>
+
+            </ul>
+        </section>
+        <section сlass="mainSec" id="educ">
+            <h2>Education</h2>
+            <ul id="education">
+                <li>RS School</li>
+            </ul>
+        </section>
+        <section сlass="mainSec" id="lang">
+            <h2>Languages</h2>
+            <ul id="languages">
+                <li>Russian</li>
+                <li>English (A2)</li>
+            </ul>
+        </section>
+    </main>
+</div>
+    <aside>
+        <section class="photoSec">
+            <img id="photo" src="My_photo.jpg" alt="My photo">
+        </section>
+        <section id='contacts' class="asideSec">
             <h3>Contacts</h3>
             <ul id='ul_contacts'>
                 <li>Adress: Belarus, Minsk, Surganova st.</li>
@@ -22,7 +114,7 @@
                 <li><a href="https://github.com/Kiselev-vladislav?tab=repositories">GitHub</a></li>
             </ul>
         </section>
-        <section id="about me">
+        <section id="about_me" class="asideSec" >
             <h3>About me</h3>
             <ul>
                 <li>My main job is freelance online advertising.</li>
@@ -30,78 +122,9 @@
                 <li>My hobby is my family. I have a wife and a child. I devote my free time to my family</li>
             </ul>
         </section>
-    </header>
-    <main>
-        <section id='name'>
-        <h1>Kiselev Vladislav</h1>
-        <p>Junior front-end devoloper</p>
-        </section>
-        <section id="skils">
-            <h2>Skils</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Git</li>
-                <li>React</li>
-            </ul>
-        </section>
-        <section id="code_example">
-            <h2>Code example</h2>
-            <ul>
-                <li>
-                    <p> <span class='bold'>Task:</span> Your task is to sort a given string. Each word in the string will contain a single number. This number is the position the word should have in the result.
+    </aside>
+    <footer>
 
-                    Note: Numbers can be from 1 to 9. So 1 will be the first word (not 0).
-                    
-                    If the input string is empty, return an empty string. The words in the input String will only contain valid consecutive numbers. </p>
-
-                    <div class="code">
-                            <pre>function order(words){ <br></pre>
-                            <pre>   let arr = words.split(' ')</pre>
-                            <pre>   let result = [] <br></pre>
-                            <pre>   for(let i = 1; i < 10; i++){</pre>
-                            <pre>       for(elem of arr) {</pre>
-                            <pre>       if(elem.indexOf(i) >= 0){</pre>
-                            <pre>           result.push(elem)</pre>
-                            <pre>       }</pre>
-                            <pre>   }</pre>
-                            <pre>   return result.join(' ')</pre>
-                            <pre>}</pre>
-                    </div>
-                </li>
-                <li>
-                    <p> <span class='bold'>Task:</span> In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.</p>
-                    <div class="code">
-                            <pre>function highAndLow(numbers){</pre>
-                            <pre>   let arr = numbers.split(' ').map(Number)</pre>
-                            <pre>   let maxnum = String(Math.max.apply(null, arr))</pre>
-                            <pre>   let minnum = String(Math.min.apply(null, arr))</pre>
-                            <pre>   return maxnum + ' ' + minnum</pre>
-                            <pre>}</pre>
-                    </div>  
-                </li>
-            </ul>
-        </section>
-        <section id="my_project">
-            <h2>My project</h2>
-            <ul>
-                <li><a href="https://github.com/Kiselev-vladislav/rsschool-cv/tree/gh-pages">My CV</a></li>
-            </ul>
-        </section>
-        <section id="education">
-            <h2>Education</h2>
-            <ul>
-                <li>RS School</li>
-            </ul>
-        </section>
-        <section id="languages">
-            <h2>Languages</h2>
-            <ul>
-                <li>Russian</li>
-                <li>English (A2)</li>
-            </ul>
-        </section>
-    </main>
+    </footer>
 </body>
 </html>
