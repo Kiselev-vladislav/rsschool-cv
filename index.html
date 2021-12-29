@@ -1,135 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
-    <div class="wrapper">
-    <div>
-    <header>
-        <nav>
-            <ul class='menu'>
-                <li><a class="buttonNav" href="#skil">Skils</a></li>
-                <li><a class="buttonNav" href="#code_example">Code example</a></li>
+  </head>
+  <body>
+    <div class="center">
+      <div class="wrapper">
+        <div class="mainWidth">
+          <header>
+            <nav>
+              <ul class="menu">
+                <li><a class="buttonNav" href="#skil">Skills</a></li>
+                <li>
+                  <a class="buttonNav" href="#code_example">Code example</a>
+                </li>
                 <li><a class="buttonNav" href="#project">My project</a></li>
                 <li><a class="buttonNav" href="#educ">Education</a></li>
                 <li><a class="buttonNav" href="#lang">Languages</a></li>
-            </ul>
-        </nav>
-        <section class="name">
-            <h1>Kiselev Vladislav</h1>
-            <p>Junior front-end developer</p>
-        </section>
-    </header>
-    <main>
-        <section class="mainSec" id="skil">
-            <h2>Skils</h2>
-            <ul id="skils">
+              </ul>
+            </nav>
+            <section class="name">
+              <h1>Kiselev Vladislav</h1>
+              <p>Junior front-end developer</p>
+            </section>
+          </header>
+          <main>
+            <section class="mainSec" id="skil">
+              <h2>Skills</h2>
+              <ul id="skils">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
                 <li>Git</li>
                 <li>React</li>
-            </ul>
-        </section>
-        <section id="code_example" class="mainSec">
-            <h2>Code example</h2>
-            <ul>
+              </ul>
+            </section>
+            <section id="code_example" class="mainSec">
+              <h2>Code example</h2>
+              <ul>
                 <li>
-                    <p class="task"> <span class='bold'>Task:</span> Your task is to sort a given string. Each word in the string will contain a single number. This number is the position the word should have in the result.
-
-                    Note: Numbers can be from 1 to 9. So 1 will be the first word (not 0).
-                    
-                    If the input string is empty, return an empty string. The words in the input String will only contain valid consecutive numbers. </p>
-
-                    <div class="code">
-                        <code>
-                            function order(words){<br>
-                            &nbsp;let arr = words.split(' ')<br>
-                            &nbsp;let result = []<br>
-                            &nbsp;for(let i = 1; i &lt; 10; i++){<br>
-                                &nbsp;    &nbsp;for(elem of arr) {<br>
-                                    &nbsp;       &nbsp;     &nbsp;if(elem.indexOf(i) >= 0){<br>
-                                        &nbsp;        &nbsp;        &nbsp;result.push(elem)<br>
-                                        &nbsp;     &nbsp;   &nbsp;}<br>
-                                        &nbsp;   &nbsp;}<br>
-                                        &nbsp;return result.join(' ')<br>
-                                        &nbsp;}<br>
-                        </code>
-                    </div>
+                  <p class="task">
+                    <span class="bold">Task:</span> Your task is to sort a given
+                    string. Each word in the string will contain a single
+                    number. This number is the position the word should have in
+                    the result. Note: Numbers can be from 1 to 9. So 1 will be
+                    the first word (not 0). If the input string is empty, return
+                    an empty string. The words in the input String will only
+                    contain valid consecutive numbers.
+                  </p>
+                  <div class="code">
+                    <code>
+                      function order(words){<br />
+                      &nbsp;let arr = words.split(' ')<br />
+                      &nbsp;let result = []<br />
+                      &nbsp;for(let i = 1; i &lt; 10; i++){<br />
+                      &nbsp; &nbsp;for(elem of arr) {<br />
+                      &nbsp; &nbsp; &nbsp;if(elem.indexOf(i) >= 0){<br />
+                      &nbsp; &nbsp; &nbsp;result.push(elem)<br />
+                      &nbsp; &nbsp; &nbsp;}<br />
+                      &nbsp; &nbsp;}<br />
+                      &nbsp;return result.join(' ')<br />
+                      &nbsp;}<br />
+                    </code>
+                  </div>
                 </li>
                 <li>
-                    <p class="task"> <span class='bold'>Task:</span> In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.</p>
-                    <div class="code">
-                        <code class="code">
-                            function highAndLow(numbers){<br>
-                                &nbsp;let arr = numbers.split(' ').map(Number)<br>
-                                &nbsp;let maxnum = String(Math.max.apply(null, arr))<br>
-                                &nbsp;let minnum = String(Math.min.apply(null, arr))<br>
-                                &nbsp;return maxnum + ' ' + minnum<br>
-                            }
-                        </code>
-                    </div>  
+                  <p class="task">
+                    <span class="bold">Task:</span> In this little assignment
+                    you are given a string of space separated numbers, and have
+                    to return the highest and lowest number.
+                  </p>
+                  <div class="code">
+                    <code class="code">
+                      function highAndLow(numbers){<br />
+                      &nbsp;let arr = numbers.split(' ').map(Number)<br />
+                      &nbsp;let maxnum = String(Math.max.apply(null, arr))<br />
+                      &nbsp;let minnum = String(Math.min.apply(null, arr))<br />
+                      &nbsp;return maxnum + ' ' + minnum<br />
+                      }
+                    </code>
+                  </div>
                 </li>
-            </ul>
-        </section>
-        <section class="mainSec" id="project">
-            <h2>My project</h2>
-            <ul id="my_project" >
-                <li><a class="project" href="https://github.com/Kiselev-vladislav/rsschool-cv/tree/gh-pages" target="_blank" >My CV</a></li>
-                <li><a class="project" href="" target="_blank" >2 Project</a></li>
-                <li><a class="project" href="" target="_blank" >3 Project</a></li>
-
-            </ul>
-        </section>
-        <section class="mainSec" id="educ">
-            <h2>Education</h2>
-            <ul id="education">
-                <li><a href="https://rs.school/js/" target="_blank" class="school">RS School</a></li>
-            </ul>
-        </section>
-        <section class="mainSec" id="lang">
-            <h2>Languages</h2>
-            <ul id="languages">
+              </ul>
+            </section>
+            <section class="mainSec" id="project">
+              <h2>My project</h2>
+              <ul id="my_project">
+                <li>
+                  <a
+                    class="project"
+                    href="https://github.com/Kiselev-vladislav/rsschool-cv/tree/gh-pages"
+                    target="_blank"
+                    >My CV</a
+                  >
+                </li>
+                <li>
+                  <a class="project" href="" target="_blank">2 Project</a>
+                </li>
+                <li>
+                  <a class="project" href="" target="_blank">3 Project</a>
+                </li>
+              </ul>
+            </section>
+            <section class="mainSec" id="educ">
+              <h2>Education</h2>
+              <ul id="education">
+                <li>
+                  <a href="https://rs.school/js/" target="_blank" class="school"
+                    >RS School</a
+                  >
+                </li>
+              </ul>
+            </section>
+            <section class="mainSec" id="lang">
+              <h2>Languages</h2>
+              <ul id="languages">
                 <li>Russian</li>
                 <li>English (A2)</li>
-            </ul>
-        </section>
-    </main>
-</div>
-    <aside>
-        <div class="photoSec">
-            <img id="photo" src="My_photo.jpg" alt="My photo">
+              </ul>
+            </section>
+          </main>
         </div>
-        <section id='contacts' class="asideSec">
+        <aside>
+          <div class="photoSec">
+            <img id="photo" src="My_photo.jpg" alt="My photo" />
+          </div>
+          <section id="contacts" class="asideSec">
             <h3>Contacts</h3>
-            <ul class=asideUl>
-                <li>Adress: Belarus, Minsk, Surganova st.</li>
-                <li>Phone: <a href="tel:+375256324209">+375256324209</a></li>
-                <li>E-mail: <a href="mailto:vladk-target@yandex.ru">vladk-target@yandex.ru</a></li>
-                <li>Discord: Vladislav Kiselev#7774</li>
-                <li><a href="https://github.com/Kiselev-vladislav?tab=repositories" target="_blank">GitHub</a></li>
+            <ul class="asideUl">
+              <li>Adress: Belarus, Minsk, Surganova st.</li>
+              <li>Phone: <a href="tel:+375256324209">+375256324209</a></li>
+              <li>
+                E-mail:
+                <a href="mailto:vladk-target@yandex.ru"
+                  >vladk-target@yandex.ru</a
+                >
+              </li>
+              <li>Discord: Vladislav Kiselev#7774</li>
+              <li>
+                <a
+                  href="https://github.com/Kiselev-vladislav?tab=repositories"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </li>
             </ul>
-        </section>
-        <section id="about_me" class="asideSec" >
+          </section>
+          <section id="about_me" class="asideSec">
             <h3>About me</h3>
-            <ul class=asideUl>
-                <li>My main job is freelance online advertising.</li>
-                <li>I have experience in team management. Former founder of a tourism company. Subordinate to 6 people.</li>
-                <li>My hobby is my family. I have a wife and a child. I devote my free time to my family</li>
+            <ul class="asideUl">
+              <li>My main job is freelance online advertising.</li>
+              <li>
+                I have experience in team management. Former founder of a
+                tourism company. Subordinate to 6 people.
+              </li>
+              <li>
+                My hobby is my family. I have a wife and a child. I devote my
+                free time to my family
+              </li>
             </ul>
-        </section>
-    </aside>
-</div>
-    <footer>
+          </section>
+        </aside>
+      </div>
+      <footer>
         <a href="https://rs.school/js/" target="_blank">
-            <img src="rs_school_js.svg" alt="RS_school">
+          <img src="rs_school_js.svg" alt="RS_school" />
         </a>
-        <p><a href="https://github.com/Kiselev-vladislav" target="_blank" id="aspo">&#169; 2022 Kiselev Vladislav</a> </p>
-    </footer>
-</body>
+        <p>
+          <a
+            href="https://github.com/Kiselev-vladislav"
+            target="_blank"
+            id="aspo"
+            >&#169; 2022 Kiselev Vladislav</a
+          >
+        </p>
+      </footer>
+    </div>
+  </body>
 </html>
