@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="wrapper">
+    <div>
     <header>
         <nav>
             <ul class='menu'>
@@ -35,7 +36,7 @@
                 <li>React</li>
             </ul>
         </section>
-        <section id="code_example" сlass="mainSec">
+        <section id="code_example" class="mainSec">
             <h2>Code example</h2>
             <ul>
                 <li>
@@ -50,7 +51,7 @@
                             function order(words){<br>
                             &nbsp;let arr = words.split(' ')<br>
                             &nbsp;let result = []<br>
-                            &nbsp;for(let i = 1; i &lt 10; i++){<br>
+                            &nbsp;for(let i = 1; i &lt; 10; i++){<br>
                                 &nbsp;    &nbsp;for(elem of arr) {<br>
                                     &nbsp;       &nbsp;     &nbsp;if(elem.indexOf(i) >= 0){<br>
                                         &nbsp;        &nbsp;        &nbsp;result.push(elem)<br>
@@ -76,22 +77,22 @@
                 </li>
             </ul>
         </section>
-        <section сlass="mainSec" id="project">
+        <section class="mainSec" id="project">
             <h2>My project</h2>
             <ul id="my_project" >
                 <li><a class="project" href="https://github.com/Kiselev-vladislav/rsschool-cv/tree/gh-pages" target="_blank" >My CV</a></li>
-                <li><a class="project" target="_blank" href="" target="_blank" >2 Project</a></li>
-                <li><a class="project" target="_blank" href="" target="_blank" >3 Project</a></li>
+                <li><a class="project" href="" target="_blank" >2 Project</a></li>
+                <li><a class="project" href="" target="_blank" >3 Project</a></li>
 
             </ul>
         </section>
-        <section сlass="mainSec" id="educ">
+        <section class="mainSec" id="educ">
             <h2>Education</h2>
             <ul id="education">
-                <li>RS School</li>
+                <li><a href="https://rs.school/js/" target="_blank" class="school">RS School</a></li>
             </ul>
         </section>
-        <section сlass="mainSec" id="lang">
+        <section class="mainSec" id="lang">
             <h2>Languages</h2>
             <ul id="languages">
                 <li>Russian</li>
@@ -101,30 +102,34 @@
     </main>
 </div>
     <aside>
-        <section class="photoSec">
+        <div class="photoSec">
             <img id="photo" src="My_photo.jpg" alt="My photo">
-        </section>
+        </div>
         <section id='contacts' class="asideSec">
             <h3>Contacts</h3>
-            <ul id='ul_contacts'>
+            <ul class=asideUl>
                 <li>Adress: Belarus, Minsk, Surganova st.</li>
-                <li>Phone: +375256324209</li>
-                <li>E-mail: vladk-target@yandex.ru</li>
+                <li>Phone: <a href="tel:+375256324209">+375256324209</a></li>
+                <li>E-mail: <a href="mailto:vladk-target@yandex.ru">vladk-target@yandex.ru</a></li>
                 <li>Discord: Vladislav Kiselev#7774</li>
-                <li><a href="https://github.com/Kiselev-vladislav?tab=repositories">GitHub</a></li>
+                <li><a href="https://github.com/Kiselev-vladislav?tab=repositories" target="_blank">GitHub</a></li>
             </ul>
         </section>
         <section id="about_me" class="asideSec" >
             <h3>About me</h3>
-            <ul>
+            <ul class=asideUl>
                 <li>My main job is freelance online advertising.</li>
                 <li>I have experience in team management. Former founder of a tourism company. Subordinate to 6 people.</li>
                 <li>My hobby is my family. I have a wife and a child. I devote my free time to my family</li>
             </ul>
         </section>
     </aside>
+</div>
     <footer>
-
+        <a href="https://rs.school/js/" target="_blank">
+            <img src="rs_school_js.svg" alt="RS_school">
+        </a>
+        <p><a href="https://github.com/Kiselev-vladislav" target="_blank" id="aspo">&#169; 2022 Kiselev Vladislav</a> </p>
     </footer>
 </body>
 </html>

@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
+    font-family: 'Ubuntu';
+}
+
+.wrapper {
     display: flex;
     flex-direction: row;
 }
@@ -74,12 +80,12 @@ main h2 {
     font-family: monospace;
 }
 
-.project {
+.project, .school, #aspo {
     text-decoration: none;
     color: black
 }
 
-.project:hover {
+.project:hover, .asideUl a:hover, .school:hover, #aspo:hover {
     font-style: italic;
 }
 
@@ -92,13 +98,13 @@ main h2 {
 }
 
 aside{
-    width: 50%;
+    width: 55%;
     background: linear-gradient(to top, white, #6899D3);
 }
 
 .asideSec h3 {
     text-align: center;
-    margin: 50px 0;
+    margin: 50px 0 20px 0;
     font-size: 30px;
     font-style: italic;
 }
@@ -137,10 +143,46 @@ aside{
     font-size: 25px;
 }
 
+.asideUl {
+    margin: 0px 20px 0px 20px;
+    list-style-type: none;
+}
 
+.asideUl li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
 
+.asideUl a{
+    text-decoration: none;
+    color: black;
+}
 
+footer {
+    height: 100px;
+    background: linear-gradient(to left, white 300px, #6899D3);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
+footer img {
+    height: 60px;
+    margin-left: 20px;
+
+}
+
+footer p {
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Noto Sans', sans-serif;
+}
 
 /* aside {
     width: 30%;
